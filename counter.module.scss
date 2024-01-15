@@ -1,0 +1,34 @@
+@use "../colors/colors" as *;
+
+.counter {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	text-align: center;
+	margin: 1rem;
+	padding-bottom: 3rem;
+	color: white;
+	&__heading {
+		font-weight: bold;
+	}
+	&__number {
+		font-size: 4rem;
+	}
+	&__text {
+		color: white;
+	}
+
+	&__img {
+		width: 60px;
+		overflow: hidden;
+
+		img {
+			object-fit: cover;
+			width: 100%;
+			height: auto;
+			padding: 0rem 0rem 2rem 0rem;
+			filter: invert(1);
+		}
+	}
+}
